@@ -9,9 +9,9 @@ Your task is to build a **web application** that allows users to **explore resta
     - [Pre-requisites](#pre-requisites)
     - [Create a Private fork](#create-a-private-fork)
     - [Install Dependencies](#install-dependencies)
+    - [Download the Dataset](#download-the-dataset)
     - [Start the Development Server](#start-the-development-server)
   - [Codebase](#codebase)
-  - [Dataset](#dataset)
   - [Goals](#goals)
     - [Home Page (`/`)](#home-page-)
     - [Restaurant Page (`/restaurant/[restaurantId]`)](#restaurant-page-restaurantrestaurantid)
@@ -56,6 +56,14 @@ To install all necessary dependencies, run:
 pnpm install
 ```
 
+### Download the Dataset
+
+Use the following command to download the dataset of restaurants in California:
+
+```bash
+pnpm data:download
+```
+
 ### Start the Development Server
 
 Begin interacting with the project by starting the development server:
@@ -85,14 +93,6 @@ It is built using the following technologies:
 - [![Next.js]](https://nextjs.org) - a powerful app framework for the web
 - [![React]](https://react.dev) - a JavaScript library for building user interfaces
 - [![Tailwind]](https://tailwindcss.com) - a utility-first CSS framework for styling
-
-## Dataset
-
-Please download the dataset of restaurants in California from this [link](https://dotlas-marketing.s3.amazonaws.com/interviews/california_restaurants_2024.json).
-
-> **Note**
-> You may add the dataset to the project folder.
-> However, avoid committing the dataset to the `git` repository.
 
 ## Goals
 
