@@ -21,6 +21,8 @@ Your task is to build a **web application** that allows users to **explore resta
   - [Evaluation](#evaluation)
     - [Criteria](#criteria)
     - [Submission](#submission)
+  - [Help](#help)
+    - [GitHub Issues](#github-issues)
     - [Contact](#contact)
 
 ## Getting Started
@@ -64,7 +66,7 @@ Create a `.env` file based on the [template](./.env.template) and fill in the ne
 
 ### Start the Development Server
 
-Begin interacting with the project by starting the development server:
+Begin interacting with the app by starting the development server:
 
 ```bash
 pnpm dev
@@ -85,7 +87,7 @@ If everything is set up correctly, you should see a prompt to visit `http://loca
 
 ## Codebase
 
-This repository serves as a starter template for the project.
+This codebase serves as a starter template for the app.
 It is built using the following technologies:
 
 - [![Next.js]](https://nextjs.org) - a powerful app framework for the web
@@ -94,7 +96,7 @@ It is built using the following technologies:
 
 ## Goals
 
-The goal of this project is to create a web application that allows users to explore the best restaurants in California.
+Your primary goal is to create a web application that allows users to explore restaurants in California.
 
 ### Home Page (`/`)
 
@@ -171,6 +173,7 @@ Include as many relevant details from the data set as possible, such as:
   - [`headlessui`](https://headlessui.com/)
   - [`daisyUI`](https://daisyui.com/)
   - [`flowbite`](https://flowbite.com/)
+  - and any other libraries you find useful.
 - It is highly recommended to use the [![mapbox]](https://www.mapbox.com) package for maps.
 
   A React compatible library is already included in the project dependencies. Find more information on how use it [here](https://visgl.github.io/.react-map-gl/).
@@ -201,7 +204,7 @@ Include as many relevant details from the data set as possible, such as:
 
 For the application:
 
-- **Functionality**: Does the application meet the requirements of the project?
+- **Functionality**: Does the application meet the requirements/goals?
 - **Familiarity**: Is the UI intuitive and easy to use? Is the application accessible?
 - **Performance**: Does the application perform well? Are there any interactions that make the user wait a long time?
 - **Creativity**: Does the application have a unique look and feel? Does it stand out from other similar applications?
@@ -215,13 +218,25 @@ For the codebase:
 
 ### Submission
 
-- Deploy the project on Vercel and ensure that it is publicly accessible.
-- Set the deployment link as the website for this GitHub repository (the About section on the repository's homepage).
-- [Invite us](#contact) as [collaborators to your private fork](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
+- Sync all changes to **your private fork** on GitHub.
+- Deploy the app on [![Vercel]](https://vercel.com/new/) by linking your GitHub repository and ensure that it is publicly accessible.
+- Set the deployment link as the website for your GitHub repository (the About section on the repository's homepage).
+- [Invite us](#contact) as [collaborators to your private fork](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository).
+
+## Help
+
+### GitHub Issues
+
+When you encounter issues while working on the project, please attempt to resolve them on your own first with the help of the internet.
+If you are still unable to resolve the issue, please create [a new issue](https://github.com/dotlas/golden-plate-map/issues/new/choose) on this repository.
+
+> **Note**
+> Before creating a new issue, please check the [existing issues](https://github.com/dotlas/golden-plate-map/issues) to see if a similar one has already been reported.
+> It is possible that someone else has already encountered the same issue and found a solution.
 
 ### Contact
 
-Feel free to reach out to us, should you have any questions.
+Please reach out to us should you have any questions.
 
 | Name            | Contact                                                                                            |
 | :-------------- | :------------------------------------------------------------------------------------------------- |
