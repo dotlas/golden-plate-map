@@ -1,3 +1,10 @@
+/**
+ * This module defines a geocoder control for Mapbox.
+ *
+ * @see GeocoderControl
+ * @see https://github.com/visgl/react-map-gl/blob/master/examples/geocoder/src/geocoder-control.tsx
+ */
+
 import MapboxGeocoder, {
   type GeocoderOptions,
 } from "@mapbox/mapbox-gl-geocoder";
@@ -26,6 +33,10 @@ type GeocoderControlProps = Omit<
   onError?: (e: object) => void;
 };
 
+/**
+ * A component that renders a geocoder control.
+ * It allows the user to search for places and navigate to them.
+ */
 export default function GeocoderControl({
   marker: markerProp = true,
 

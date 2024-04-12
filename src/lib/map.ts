@@ -1,3 +1,9 @@
+/**
+ * This module defines utilities for working with maps.
+ *
+ * @see useZoomToMarkers
+ */
+
 import bbox from "@turf/bbox";
 import { points } from "@turf/helpers";
 import { useCallback, useMemo, type RefObject } from "react";
@@ -10,6 +16,9 @@ type ZoomToMarkersProps = {
   eventData?: mapboxgl.EventData;
 };
 
+/**
+ * A React hook that returns a callback which when called will zoom the map to fit all the given markers.
+ */
 export function useZoomToMarkers({
   markers,
   mapRef,

@@ -24,8 +24,8 @@ export async function getRestaurantById(
 }
 
 const searchQueryInputSchema = z.object({
-  query: z.string(),
-  limit: z.number().optional().default(10),
+  query: z.string().default("").optional(),
+  limit: z.number().default(10).optional(),
 });
 
 /**
@@ -41,5 +41,13 @@ export async function searchRestaurants(
 ): Promise<Restaurant[]> {
   const { query, limit } = searchQueryInputSchema.parse(input);
 
-  throw new Error("Not implemented");
+  console.log(
+    "Searching for restaurants with query:",
+    query,
+    "and limit:",
+    limit,
+  );
+  console.error("Not implemented");
+
+  return [];
 }
