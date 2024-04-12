@@ -219,8 +219,13 @@ For the codebase:
 ### Submission
 
 - Sync all changes to **your private fork** on GitHub.
-- Deploy the app on [![Vercel]](https://vercel.com/new/) by linking your GitHub repository and ensure that it is publicly accessible.
-- Set the deployment link as the website for your GitHub repository (the About section on the repository's homepage).
+- Deploy the app on [![Vercel]](https://vercel.com/new/):
+  - Link your GitHub repository
+  - Add the necessary environment variables
+- Set the deployed app's link (assigned by Vercel) as the website for your GitHub repository (the About section on the repository's homepage).
+
+  This link should be of the form `<something>.vercel.app`.
+
 - [Invite us](#contact) as [collaborators to your private fork](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository).
 
 ## Help
