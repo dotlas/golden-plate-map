@@ -10,6 +10,7 @@ Your task is to build a **web application** that allows users to **explore resta
     - [Create a Private fork](#create-a-private-fork)
     - [Install Dependencies](#install-dependencies)
     - [Download the Dataset](#download-the-dataset)
+    - [Load Environment Variables](#load-environment-variables)
     - [Start the Development Server](#start-the-development-server)
   - [Codebase](#codebase)
   - [Goals](#goals)
@@ -33,20 +34,13 @@ Your task is to build a **web application** that allows users to **explore resta
 
 ### Create a Private fork
 
-Let's create a private fork of this repository:
+Create a private fork of this repository:
 
 - [Go to the "Import a repository" page on GitHub](https://github.com/new/import)
-- Fill in the information as shown below:
-
-  <p align="center">
-    <img height="400" src="https://github.com/dotlas/mission_dotlas/raw/main/assets/private_fork.png" alt="How to create a private fork" />
-    <p align="center">How to create a private fork</p>
-  </p>
+- Specify the url for this repository
+- Click on the "Begin import" button
 
 Once the repository is created on GitHub, clone it onto your local system!
-
-> **Note**
-> Use the url for this repository as the source url for the import.
 
 ### Install Dependencies
 
@@ -63,6 +57,10 @@ Use the following command to download the dataset of restaurants in California:
 ```bash
 pnpm data:download
 ```
+
+### Load Environment Variables
+
+Create a `.env` file based on the [template](./.env.template) and fill in the necessary values.
 
 ### Start the Development Server
 
@@ -100,11 +98,11 @@ The goal of this project is to create a web application that allows users to exp
 
 ### Home Page (`/`)
 
-The primary goal of the home page is to provide users with the ability to find restaurants.
+The primary goal of the [home page](./src/app/page.tsx) is to provide users with the ability to find restaurants.
 
 It should include the following features:
 
-- A search input to find restaurants by name or cuisine:
+- [A search input](./src/app/_search.tsx) to find restaurants by name or cuisine:
 
   ![Search Input](./assets/search-bar.png)
 
@@ -141,7 +139,7 @@ It should include the following features:
 
 ### Restaurant Page (`/restaurant/[restaurantId]`)
 
-This page serves as the detailed view for a specific restaurant.
+This page serves as [the detailed view for a specific restaurant](./src/app/restaurant/[restaurantId]/page.tsx).
 
 Include as many relevant details from the data set as possible, such as:
 
@@ -175,11 +173,11 @@ Include as many relevant details from the data set as possible, such as:
   - [`flowbite`](https://flowbite.com/)
 - It is highly recommended to use the [![mapbox]](https://www.mapbox.com) package for maps.
 
-  A React compatible libraary is already included in the project dependencies. Find more information on how use it [here](https://visgl.github.io/.react-map-gl/).
+  A React compatible library is already included in the project dependencies. Find more information on how use it [here](https://visgl.github.io/.react-map-gl/).
 
   You will need [an access token](https://visgl.github.io/react-map-gl/docs/get-started/mapbox-tokens) from Mapbox to use the library.
 
-  Once you have an access token, create a `.env` file based on the [template](./.env.template).
+  Once you have an access token, set the `NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN` environment variable in the `.env` file you created earlier.
 
   > **Note**
   > This `.env` file is already included in the `.gitignore` file, so you don't have to worry about accidentally committing it to the repository.
